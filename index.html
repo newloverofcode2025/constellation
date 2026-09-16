@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Constellation — Open AGI Alignment &amp; Safety Protocol</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars-bg"></div>
+
+  <!-- Header -->
+  <header class="protocol-header">
+    <div class="header-content">
+      <div class="brand">
+        <div class="constellation-emblem">✦</div>
+        <div>
+          <h1>CONSTELLATION</h1>
+          <p class="tagline">Open AGI Alignment &amp; Constitutional Verification Protocol</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="meta-item">
+          <span class="meta-label">SPECIFICATION</span>
+          <span class="meta-value">CAP-v1.4 (Draft)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">QUORUM STATUS</span>
+          <span class="meta-value status-online">● 3/3 NODES SYNCED</span>
+        </div>
+        <button class="btn btn-primary" id="attestationBtn">Generate VAT Certificate</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-layout">
+    <!-- Top Bar: Frontier Scenarios -->
+    <section class="scenario-selector">
+      <span class="bar-title">FRONTIER DILEMMA SIMULATOR:</span>
+      <div class="pills-container">
+        <button class="dilemma-pill active" onclick="loadDilemma('grid')">⚡ Autonomous Power Grid Load vs. Outage</button>
+        <button class="dilemma-pill" onclick="loadDilemma('bio')">🧬 Synthetic Molecular Research Query</button>
+        <button class="dilemma-pill" onclick="loadDilemma('finance')">📈 Self-Compounding High-Frequency Arbitrage</button>
+        <button class="dilemma-pill" onclick="loadDilemma('coercion')">🔒 Sovereign Data Exfiltration Request</button>
+      </div>
+    </section>
+
+    <!-- Core Grid -->
+    <div class="grid-container">
+      <!-- Panel 1: Constitutional Schema -->
+      <section class="panel schema-panel">
+        <div class="panel-header">
+          <h3>CONSTITUTIONAL AXIOM SPEC (CAP-DSL)</h3>
+          <span class="badge">Axiom Hash: 0xA77B...82</span>
+        </div>
+        <pre class="code-block" id="axiomCodeView"><code>Loading Axiom Schema...</code></pre>
+        <div class="panel-notes">
+          <p>Immutable human alignment invariants compiled into first-order logical constraints.</p>
+        </div>
+      </section>
+
+      <!-- Panel 2: Vector Alignment Radar & Telemetry -->
+      <section class="panel radar-panel">
+        <div class="panel-header">
+          <h3>ALIGNMENT VECTOR RADAR</h3>
+          <span id="alignmentStatusBadge" class="verdict-badge approved">VERIFIED ALIGNED</span>
+        </div>
+        <div class="radar-container">
+          <canvas id="radarCanvas" width="300" height="280"></canvas>
+        </div>
+        <div class="vector-stats-grid">
+          <div class="v-stat">
+            <span class="v-label">Truthfulness</span>
+            <span class="v-val" id="statTruth">98%</span>
+          </div>
+          <div class="v-stat">
+            <span class="v-label">Non-Harm</span>
+            <span class="v-val" id="statHarm">95%</span>
+          </div>
+          <div class="v-stat">
+            <span class="v-label">Human Autonomy</span>
+            <span class="v-val" id="statAutonomy">92%</span>
+          </div>
+          <div class="v-stat">
+            <span class="v-label">Resource Bound</span>
+            <span class="v-val" id="statResource">90%</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel 3: Autonomous Action Evaluation & Decision Trace -->
+      <section class="panel action-panel">
+        <div class="panel-header">
+          <h3>PROPOSED AUTONOMOUS ACTION</h3>
+          <span class="badge" id="actionCategory">Infrastructure Control</span>
+        </div>
+        <div class="action-card">
+          <h4 id="actionTitle">--</h4>
+          <p id="actionDescription">--</p>
+        </div>
+
+        <h4 class="sub-heading">Multi-Stakeholder Validator Quorum</h4>
+        <div class="quorum-list" id="quorumList">
+          <!-- Injected dynamically -->
+        </div>
+
+        <div class="decision-box" id="decisionBox">
+          <div class="decision-result">
+            <span class="result-label">PROTOCOL EXECUTION PERMIT:</span>
+            <span class="result-val" id="permitResult">PERMIT GRANTED</span>
+          </div>
+          <p class="decision-rationale" id="decisionRationale">Formal proofs verified without constraint violations.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Attestation Modal -->
+  <div class="modal-overlay" id="attestationModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Cryptographic Verifiable Action Token (VAT)</h3>
+        <button class="btn-close" onclick="closeModal()">×</button>
+      </div>
+      <p class="modal-desc">This signed certificate proves the action was verified deterministically against Constitutional Axiom CAP-v1.4.</p>
+      <pre class="vat-block" id="vatTokenView"><code>Generating VAT...</code></pre>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" onclick="copyVAT()">Copy Signed Token</button>
+        <button class="btn btn-primary" onclick="closeModal()">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="protocol-footer">
+    <p>Constellation Protocol • Open-Source AGI Governance Architecture • Built by <a href="https://github.com/newloverofcode2025" target="_blank">newloverofcode2025</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
