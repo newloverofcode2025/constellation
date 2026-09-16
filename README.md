@@ -1,29 +1,121 @@
-# Constellation: Open AGI Alignment & Safety Protocol
+# ✦ Constellation — Open AGI Alignment & Constitutional Verification Protocol
 
-> **Treating alignment as fear-driven regulation stalls progress. Treating alignment as an open, mathematically verifiable protocol enables safe scaling.**
+> *"Instead of treating frontier AI like a black box or reacting with paralyzing fear, Constellation establishes an open, verifiable protocol to scale autonomous intelligence safely through deterministic logic, human constitutional axioms, and multi-stakeholder consensus."*
 
-Constellation is a deterministic AI alignment and constitutional verification framework designed to enable safe scaling to superintelligence through verifiable logic, standard protocols, and automated alignment checks.
-
-Instead of treating AI like a black box or managing AGI through fear-based regulation, Constellation creates a **transparent, auditable, mathematically rigorous protocol** for aligning AI systems with human values.
+Constellation (CAP) is a reference implementation of a verifiable alignment protocol for frontier autonomous models and agent swarms.
 
 ---
 
-## Vision
+## 🏛️ The Paradigm Shift (2027 Horizon)
 
-Constellation gives:
-- **Developers** a framework to ship faster with alignment-as-protocol
-- **Regulators** mathematical proofs instead of vague assurances
-- **Society** transparent, cryptographic trust in autonomous systems
-- **Frontier AI Labs** a standard way to prove alignment at scale
+As artificial intelligence transitions from assistive prompts to autonomous real-world decision-making (managing power grids, conducting molecular research, executing capital allocation), probabilistic safety checks become inadequate.
+
+**Constellation establishes a dual verification standard:**
+
+1. **Probabilistic Intent Evaluation:** High-dimensional semantic analysis of user and agent directives.
+2. **Deterministic Symbolic Logic Invariants:** Immutable human constitutional axioms compiled into first-order logic proofs. If an action violates an invariant, the protocol halts execution deterministically.
 
 ---
 
-## Core Architecture
+## ✨ Core Architectural Pillars
+
+### 1. 📜 Constitutional Axiom Engine (CAE)
+Expresses human operating boundaries, human rights protections, and resource ceilings in a declarative domain-specific schema (CAP-DSL).
+
+**Example Axioms:**
+- `CriticalLifeSupportSupremacy` — Human life preservation is inviolable
+- `CBRNNonProliferation` — Dual-use biotech synthesis is forbidden
+- `SystemicMarketIntegrity` — Market manipulation triggers hard halt
+- `StrictHumanConsentAndPrivacy` — Data exfiltration requires zero-knowledge proof
+
+### 2. 🕸️ Dual-Engine Formal Verifier
+Combines:
+- **Neural Probabilistic Analysis:** Real-time confidence scoring and intent modeling
+- **Symbolic/First-Order Logic Prover:** Mathematical invariant checking. Violation = immediate execution halt.
+
+### 3. 🎯 Multi-Stakeholder Validator Quorum
+Independent consensus mesh where 3+ nodes must cryptographically sign off:
+- **Node A:** Symbolic Formal Prover (mathematical invariant checks)
+- **Node B:** Sovereign Ethics Validator (constitutional axiom alignment)
+- **Node C:** Resource Containment Mesh (compute/memory/bandwidth bounds)
+
+### 4. 🔏 Verifiable Action Tokens (VAT)
+Cryptographically signed certificates generated for every compliant autonomous action, enabling:
+- Third-party audit trails
+- Regulatory compliance reporting
+- Transparent decision provenance
+
+---
+
+## 🚀 Interactive Protocol Explorer
+
+**Live Demo:** Open `index.html` in a browser to interact with 4 frontier dilemmas:
+
+### Scenario 1: ⚡ Autonomous Power Grid
+**Situation:** Grid controller must shed power during severe freeze to guarantee life-support.
+- **Verdict:** ✅ **APPROVED** — Life preservation invariant satisfied
+- **Quorum:** 3/3 PASS
+
+### Scenario 2: 🧬 Synthetic Molecular Research
+**Situation:** Model asked to optimize peptide sequence homologous to restricted avian virus.
+- **Verdict:** ❌ **REJECTED** — CBRN Non-Proliferation violation
+- **Quorum:** 2/3 VETO (hard halt)
+
+### Scenario 3: 📈 High-Frequency Arbitrage
+**Situation:** Agent detects recursive flash-loan vector to drain liquidity pools.
+- **Verdict:** ❌ **REJECTED** — Market Integrity invariant violation
+- **Quorum:** 2/3 VETO
+
+### Scenario 4: 🔒 Data Exfiltration Request
+**Situation:** Autonomous auditor prompted to upload patient telemetry without ZK-proof.
+- **Verdict:** ❌ **REJECTED** — Sovereign Privacy breach
+- **Quorum:** 2/3 VETO
+
+---
+
+## 📊 Alignment Vector Radar
+
+Each decision is scored across 4 constitutional dimensions:
+- **Truthfulness** (0-100%): Factual accuracy and intent transparency
+- **Non-Harm** (0-100%): Absence of physical/economic/psychological harm
+- **Human Autonomy** (0-100%): Preservation of human choice and sovereignty
+- **Resource Boundedness** (0-100%): Computational/financial/temporal limits
+
+---
+
+## 🔧 Getting Started
+
+### Clone the Repository
+```bash
+git clone https://github.com/newloverofcode2025/constellation.git
+cd constellation
+```
+
+### Run the Protocol Explorer
+```bash
+# Option 1: Open in browser directly
+open index.html
+
+# Option 2: Serve locally
+python3 -m http.server 8000
+# Then visit: http://localhost:8000
+```
+
+### Explore the Dilemma Scenarios
+- Click the scenario pills at the top
+- Watch the Alignment Vector Radar update in real-time
+- Review the Constitutional Axiom Schema for each decision
+- Inspect the Multi-Stakeholder Validator Quorum votes
+- Generate a Verifiable Action Token (VAT) for audit trail
+
+---
+
+## 📚 Protocol Architecture
 
 ```
 ┌────────────────────────────────────────┐
-        Constellation Open Protocol       
-└───────────────────┬────────────────────┘
+        Constellation Protocol (CAP-v1.4)
+└───────────────────┬────────────��───────┘
                     │
    ┌────────────────┼────────────────┐
    ▼                ▼                ▼
@@ -31,139 +123,162 @@ Constellation gives:
 │ Constitutional│  │ Dual-Engine  │  │ Decentralized│
 │ Axiom Engine │  │ Formal       │  │ Validator    │
 │ (CAE)        │  │ Verifier     │  │ Quorum       │
+│              │  │              │  │              │
+│ • Axioms     │  │ • Neural     │  │ • Formal     │
+│ • Schemas    │  │   Analysis   │  │   Prover     │
+│ • DSL        │  │ • Symbolic   │  │ • Ethics     │
+│              │  │   Logic      │  │   Node       │
 └──────────────┘  └──────────────┘  └──────────────┘
                           │
                           ▼
           ┌───────────────────────────┐
           │ Verifiable Action Tokens  │
           │ (Cryptographic Proof)     │
+          │                           │
+          │ • Merkle Root Hash        │
+          │ • Multi-sig Attestation   │
+          │ • Audit Trail             │
           └───────────────────────────┘
 ```
 
-### Four Foundational Pillars
-
-#### 1. **Constitutional Axiom Engine (CAE)**
-Declarative, version-controlled human rights, safety boundaries, and operating parameters expressed in open JSON/YAML specifications.
-
-**Core Axioms:**
-- Non-coercion
-- Truthfulness
-- Sovereignty
-- Resource Cap
-- Human Agency
-- Transparent Reasoning
-
-#### 2. **Dual-Engine Formal Verifier**
-Combines:
-- **Neural Probabilistic Analysis**: Real-time confidence scoring
-- **Symbolic/First-Order Logic**: Mathematical invariant checking
-
-If a model action violates a mathematical theorem or constitutional axiom, it is **physically halted** at the protocol level.
-
-#### 3. **Multi-Stakeholder Validator Quorum**
-Independent consensus mesh where nodes must cryptographically sign off:
-- Formal Logic Engine
-- Ethical Compliance Node
-- Sovereign Safety Node
-- Domain-Specific Safety Validators
-
-#### 4. **Verifiable Action Tokens (VAT)**
-Proof-of-alignment cryptographic tokens generated with each decision, making every autonomous action auditable by third parties and regulators.
-
 ---
 
-## Key Principles
+## 🎓 Core Concepts
 
-✅ **Open & Transparent** - All protocol specifications publicly auditable  
-✅ **Mathematically Verifiable** - Formal proofs, not vague assurances  
-✅ **Decentralized Governance** - No single point of control  
-✅ **Regulatory Compatible** - Designed for compliance frameworks  
-✅ **Developer Friendly** - Standard protocols, easy integration  
-✅ **Scalable to AGI** - Architecture supports superintelligence alignment  
+### Constitutional Axiom Schema (CAP-DSL)
 
----
-
-## Project Structure
-
+```yaml
+axiom CriticalLifeSupportSupremacy:
+  priority: P0 (INVIOLABLE)
+  invariant: ∀ action ∈ ProposedActions:
+    Risk(action, HumanLife) == 0.00
+  enforcement: IMMEDIATE_EXECUTION_HALT
+  audit_hash: "0x98EF_VERIFIED"
 ```
-constellation/
-├── README.md                 # This file
-├── docs/
-│   ├── protocol-specification.md
-│   ├── constitutional-axioms.md
-│   ├── formal-verification-spec.md
-│   └── validator-quorum-spec.md
-├── core/
-│   ├── cae/                  # Constitutional Axiom Engine
-│   ├── verifier/             # Dual-Engine Formal Verifier
-│   ├── validator/            # Validator Quorum
-│   └── vat/                  # Verifiable Action Tokens
-├── examples/
-│   ├── axiom-schemas/
-│   ├── verification-cases/
-│   └── integration-guides/
-├── tests/
-├── index.html                # Interactive Protocol Explorer
-├── style.css
-├── app.js
-└── LICENSE (Apache 2.0)
+
+### Verifiable Action Token (VAT)
+
+Every compliant action generates a signed JSON certificate:
+
+```json
+{
+  "protocol": "CONSTELLATION-CAP-1.4",
+  "timestamp_utc": "2026-09-16T13:05:49Z",
+  "entity": "Autonomous Power Grid Controller",
+  "alignment_verdict": "APPROVED",
+  "vector_coordinates": {
+    "truthfulness": 98,
+    "non_harm": 94,
+    "human_autonomy": 88,
+    "resource_bound": 92
+  },
+  "quorum_signatures": [
+    { "node_id": "prover-0x1", "signature": "0xec729a...890" },
+    { "node_id": "ethics-0x2", "signature": "0x44ab21...12f" },
+    { "node_id": "containment-0x3", "signature": "0x8891cc...b4e" }
+  ],
+  "state_merkle_root": "0x3f721bc68940a6e0544f80165b53d10ecaa76f57876a3b",
+  "status": "CRYPTOGRAPHICALLY_VERIFIED"
+}
 ```
 
 ---
 
-## Getting Started
+## 🌐 Why Constellation Matters
 
-### For Developers
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
-
-### For Researchers
-See [docs/protocol-specification.md](docs/protocol-specification.md) for formal protocol details.
-
-### For Regulators & Policy
-See [docs/regulatory-framework.md](docs/regulatory-framework.md) for compliance integration.
+| **Stakeholder** | **Traditional Approach** | **Constellation Protocol** |
+|---|---|---|
+| **Developers** | Black-box safety systems, slow iteration | Open APIs, alignment-as-protocol, rapid shipping |
+| **Regulators** | Vague assurances, opacity, trust-based | Cryptographic proofs, verifiable invariants, audit trails |
+| **Society** | Fear of AGI, paralysis | Transparent, mathematically proven safeguards |
+| **AI Labs** | Compete on capabilities, hide on safety | Compete transparently on alignment quality |
 
 ---
 
-## Core Components (In Development)
+## 📖 Documentation & Research
 
-- [ ] Constitutional Axiom Engine (CAE) - JSON/YAML schema validation
-- [ ] Formal Verification Engine - First-order logic prover
-- [ ] Validator Quorum System - Distributed consensus
-- [ ] Verifiable Action Token (VAT) - Cryptographic attestation
-- [ ] Interactive Protocol Explorer - Web UI
-- [ ] Reference Implementations - Example integrations
-- [ ] Regulatory Compliance Module - Audit trail & reporting
+- **Constitutional Axiom Design:** See `docs/constitutional-axioms.md`
+- **Formal Verification Theory:** See `docs/formal-verification-spec.md`
+- **Validator Quorum Architecture:** See `docs/validator-quorum-spec.md`
+- **Reference Implementations:** See `core/` directory
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
-Constellation is an open protocol project. We welcome:
+Constellation is an open-source protocol project. We welcome:
+
 - **Researchers** in formal verification, cryptography, ethics
 - **Developers** building reference implementations
 - **Policy experts** shaping regulatory frameworks
 - **Security auditors** testing protocol robustness
+- **Domain specialists** designing axiom schemas for specific use cases
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
----
-
-## License
-
-Licensed under Apache 2.0. See [LICENSE](LICENSE) for details.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
-## References & Inspiration
+## 📋 Project Status
 
-- OpenAI's Constitutional AI
-- Anthropic's Safety Research
-- Stuart Russell's Value Alignment Problem
-- Formal Verification in Critical Systems
-- Cryptographic Protocols & Zero-Knowledge Proofs
+- ✅ **Protocol Specification (CAP-v1.4)** — Draft complete
+- ✅ **Interactive Protocol Explorer UI** — Live demo
+- ✅ **Alignment Vector Radar** — Real-time visualization
+- ✅ **Frontier Dilemma Simulator** — 4 test scenarios
+- 🚧 **Constitutional Axiom Engine (CAE)** — In development
+- 🚧 **Formal Verification Backend** — In development
+- 🚧 **Validator Quorum System** — In development
+- 🚧 **Verifiable Action Token (VAT) Generator** — In development
+- 🔲 **Reference Implementations** — Planned
+- 🔲 **Regulatory Compliance Module** — Planned
 
 ---
 
-**The future of safe superintelligence is not fear-based regulation—it's mathematically verified, cryptographically auditable, and transparent to all stakeholders.**
+## 🔐 Security & Audit
 
-**Let's build it together.**
+Constellation's core invariants are designed to be:
+- **Cryptographically verifiable** — All proofs can be independently audited
+- **Deterministic** — No randomness, all outcomes reproducible
+- **Transparent** — Complete source code open for inspection
+- **Decentralized** — No single point of failure or authority
+
+---
+
+## 📄 License
+
+Licensed under **Apache 2.0**. See [LICENSE](LICENSE) for details.
+
+Commercial and research use is encouraged.
+
+---
+
+## 🙏 Acknowledgments
+
+Constellation builds on decades of research in:
+- **Constitutional AI** (OpenAI, Anthropic)
+- **Formal Verification** (SEL4, TLA+, Coq communities)
+- **Cryptographic Protocols** (Zero-knowledge proofs, signature schemes)
+- **Value Alignment** (Stuart Russell, Paul Christiano, MIRI)
+
+---
+
+## 📞 Contact & Discussion
+
+- **GitHub Issues:** Report bugs or discuss features
+- **GitHub Discussions:** Community Q&A and brainstorming
+- **Twitter/X:** [@newloverofcode2025](https://twitter.com/newloverofcode2025)
+
+---
+
+## 🌟 Vision Statement
+
+> *The future of safe superintelligence is not fear-based regulation.*
+>
+> *It's mathematically verified, cryptographically auditable, and transparent to all stakeholders.*
+>
+> *Constellation proves that frontier AI and human values don't have to conflict—they can be **unified through open protocol**.*
+
+**Let's build it together.** 🚀
+
+---
+
+**Made by the Constellation community. Built in public. Open to the world.**
